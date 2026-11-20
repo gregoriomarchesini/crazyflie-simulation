@@ -73,7 +73,7 @@ import numpy as np
 # ---------------------------------------------------------------------------
 # CRTP constants (CrtpUtils.h)
 # ---------------------------------------------------------------------------
-CRTP_PORT_SIM    = 0x09
+CRTP_PORT_SIM    = 0x0A  # 0x09 in upstream CrazySim; moved because current firmware uses 0x09 for the supervisor
 CRTP_PORT_LOC    = 0x06
 CRTP_HDR_SIM     = (CRTP_PORT_SIM << 4) | 0           # 0x90  (SIM port, ch 0 — motors)
 CRTP_HDR_LED     = (CRTP_PORT_SIM << 4) | 1           # 0x91  (SIM port, ch 1 — LED RGB)
